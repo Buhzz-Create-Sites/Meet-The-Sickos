@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PRIMARY SEO -->
+  <title>Watch Meet The Sickos — Stream the Film | $7 One Time</title>
+  <meta name="description" content="Watch Meet The Sickos online. Pay once, stream anywhere. No subscription. A dark comedy horror film by Raheem Roher — produced by No Egos World Media and XLNZ Productions LLC.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://MeetTheSickos.com/watch.html">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Meet The Sickos">
+  <meta property="og:title" content="Watch Meet The Sickos — $7, Stream Anywhere">
+  <meta property="og:description" content="No subscription. No algorithm. Pay once and watch Meet The Sickos wherever you want.">
+  <meta property="og:image" content="https://MeetTheSickos.com/images/mts-logo.png">
+  <meta property="og:url" content="https://MeetTheSickos.com/watch.html">
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Watch Meet The Sickos — $7, Stream Anywhere">
+  <meta name="twitter:description" content="No subscription. No algorithm. Pay once and watch wherever you want.">
+  <meta name="twitter:image" content="https://MeetTheSickos.com/images/mts-logo.png">
+
+  <!-- STRUCTURED DATA — Purchase action -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Movie",
+    "name": "Meet The Sickos",
+    "url": "https://MeetTheSickos.com/",
+    "image": "https://MeetTheSickos.com/images/mts-logo.png",
+    "director": { "@type": "Person", "name": "Raheem Roher" },
+    "offers": {
+      "@type": "Offer",
+      "price": "7.00",
+      "priceCurrency": "USD",
+      "availability": "https://schema.org/InStock",
+      "url": "https://MeetTheSickos.com/watch.html"
+    }
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/watch.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Meet The Sickos</a>
+    <div class="nav-links">
+      <a href="watch.html" class="nav-active">Watch</a>
+      <a href="photos.html">Photos</a>
+      <a href="merch.html">Merch</a>
+      <a href="game.html">Play</a>
+      <a href="index.html#screenings">Screenings</a>
+    </div>
+    <button class="nav-burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="watch.html">Watch</a>
+    <a href="photos.html">Photos</a>
+    <a href="merch.html">Merch</a>
+    <a href="game.html">Play</a>
+    <a href="index.html#screenings">Screenings</a>
+  </div>
+
+  <section class="watch-hero">
+    <div class="watch-left">
+      <p class="watch-eyebrow">Own It &mdash; One Time</p>
+      <h1 class="watch-title">Watch<br>Meet The<br>Sickos</h1>
+      <p class="watch-sub">No subscription. No algorithm. Pay once and it's yours. Link delivered to your email instantly after checkout.</p>
+    </div>
+    <div class="watch-right">
+      <div class="watch-price-card">
+        <p class="wpc-label">Digital Purchase</p>
+        <p class="wpc-price">$7</p>
+        <p class="wpc-note">One time &nbsp;·&nbsp; Stream anywhere via Vimeo</p>
+
+        <!-- 
+          STRIPE INTEGRATION:
+          1. Create a Stripe Payment Link at dashboard.stripe.com
+          2. Replace the href below with your Payment Link URL
+          3. The success URL should point to watch-success.html
+          4. On success page, embed the Vimeo password-protected link
+        -->
+        <a href="https://buy.stripe.com/YOUR_PAYMENT_LINK" class="btn-main btn-full watch-buy-btn" id="stripeBtn">
+          Buy And Watch Now
+        </a>
+
+        <ul class="wpc-features">
+          <li>
+            <span class="wpc-dot"></span>
+            Instant access — link emailed after payment
+          </li>
+          <li>
+            <span class="wpc-dot"></span>
+            HD stream via Vimeo
+          </li>
+          <li>
+            <span class="wpc-dot"></span>
+            Watch on any device
+          </li>
+          <li>
+            <span class="wpc-dot"></span>
+            Supports the filmmakers directly
+          </li>
+          <li>
+            <span class="wpc-dot"></span>
+            Secure checkout via Stripe
+          </li>
+        </ul>
+
+        <p class="wpc-imdb">
+          Listed on <a href="https://www.imdb.com/title/tt38792054/" target="_blank" rel="noopener">IMDb &nearr;</a>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRAILER EMBED — replace with your Vimeo embed code -->
+  <section class="trailer-section">
+    <p class="trailer-label">Trailer</p>
+    <div class="trailer-frame">
+      <iframe
+        src="https://www.youtube.com/embed/-O4md_fCTJE?rel=0&modestbranding=1"
+        title="Meet The Sickos — Official Trailer"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span class="footer-copy">&copy; 2026 XLNZ Productions LLC &nbsp;&middot;&nbsp; All Rights Reserved</span>
+    <div class="footer-links">
+      <a href="index.html">&larr; Back to Home</a>
+      <a href="https://www.imdb.com/title/tt38792054/" target="_blank" rel="noopener">IMDb &nearr;</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

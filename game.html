@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PRIMARY SEO -->
+  <title>Play — Don't Get Caught | Meet The Sickos</title>
+  <meta name="description" content="Stanley and Patricia are somewhere in the house. Click them before time runs out. Play the official Meet The Sickos browser game — free.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://MeetTheSickos.com/game.html">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Meet The Sickos">
+  <meta property="og:title" content="Don't Get Caught — Play the Meet The Sickos Game">
+  <meta property="og:description" content="Stanley and Patricia are somewhere in the house. Click them before time runs out.">
+  <meta property="og:image" content="https://MeetTheSickos.com/images/mts-logo.png">
+  <meta property="og:url" content="https://MeetTheSickos.com/game.html">
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Don't Get Caught — Play the Meet The Sickos Game">
+  <meta name="twitter:description" content="Stanley and Patricia are somewhere in the house. Click them before time runs out.">
+  <meta name="twitter:image" content="https://MeetTheSickos.com/images/mts-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/game.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Meet The Sickos</a>
+    <div class="nav-links">
+      <a href="watch.html">Watch</a>
+      <a href="photos.html">Photos</a>
+      <a href="merch.html">Merch</a>
+      <a href="game.html" class="nav-active">Play</a>
+      <a href="index.html#screenings">Screenings</a>
+    </div>
+    <button class="nav-burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="watch.html">Watch</a>
+    <a href="photos.html">Photos</a>
+    <a href="merch.html">Merch</a>
+    <a href="game.html">Play</a>
+    <a href="index.html#screenings">Screenings</a>
+  </div>
+
+  <!-- INTRO SCREEN -->
+  <div class="game-intro" id="gameIntro">
+    <div class="game-intro-inner">
+      <p class="game-eyebrow">You're Already Inside</p>
+      <h1 class="game-intro-title">Don't Get Caught</h1>
+      <p class="game-intro-sub">
+        Stanley and Patricia are somewhere in the house.<br>
+        Click them before time runs out.<br>
+        <em>They're faster than they look.</em>
+      </p>
+      <div class="game-intro-stats">
+        <div class="stat-block">
+          <span class="stat-num" id="hiScore">0</span>
+          <span class="stat-lbl">Best Score</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-num" id="hiLevel">1</span>
+          <span class="stat-lbl">Best Level</span>
+        </div>
+      </div>
+      <button class="btn-main game-start-btn" id="startBtn">Enter The House</button>
+    </div>
+  </div>
+
+  <!-- GAME SCREEN -->
+  <div class="game-screen" id="gameScreen" style="display:none;">
+    <div class="game-hud">
+      <div class="hud-block">
+        <span class="hud-label">Score</span>
+        <span class="hud-val" id="score">0</span>
+      </div>
+      <div class="hud-block hud-center">
+        <span class="hud-label">Level</span>
+        <span class="hud-val" id="level">1</span>
+      </div>
+      <div class="hud-block hud-right">
+        <span class="hud-label">Time</span>
+        <span class="hud-val" id="timer">30</span>
+      </div>
+    </div>
+
+    <div class="game-arena" id="gameArena">
+      <div class="arena-bg-text" aria-hidden="true">1345<br>E Logan<br>St</div>
+    </div>
+
+    <div class="game-quote-bar">
+      <p class="game-quote" id="gameQuote">&nbsp;</p>
+    </div>
+  </div>
+
+  <!-- GAME OVER SCREEN -->
+  <div class="game-over" id="gameOver" style="display:none;">
+    <div class="game-over-inner">
+      <p class="game-eyebrow" id="goEyebrow">Game Over</p>
+      <h2 class="game-over-title" id="goTitle">They Got You.</h2>
+      <p class="game-over-sub" id="goSub">Not everyone makes it out.</p>
+      <div class="game-intro-stats">
+        <div class="stat-block">
+          <span class="stat-num" id="finalScore">0</span>
+          <span class="stat-lbl">Score</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-num" id="finalLevel">1</span>
+          <span class="stat-lbl">Level</span>
+        </div>
+        <div class="stat-block">
+          <span class="stat-num" id="finalHi">0</span>
+          <span class="stat-lbl">Best</span>
+        </div>
+      </div>
+      <div class="game-over-btns">
+        <button class="btn-main" id="playAgainBtn">Play Again</button>
+        <a href="watch.html" class="btn-ghost">Watch The Film</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer" style="margin-top:0;">
+    <span class="footer-copy">&copy; 2026 XLNZ Productions LLC &nbsp;&middot;&nbsp; All Rights Reserved</span>
+    <div class="footer-links">
+      <a href="index.html">&larr; Back to Home</a>
+      <a href="watch.html">Watch The Film</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/game.js"></script>
+</body>
+</html>

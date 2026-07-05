@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- PRIMARY SEO -->
+  <title>Premiere Night Photos — Meet The Sickos | Cinemark West Philadelphia</title>
+  <meta name="description" content="Photos from the sold-out world premiere of Meet The Sickos at Cinemark West Philadelphia. Find yourself and download your high-res premiere night photo — free.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://MeetTheSickos.com/photos.html">
+
+  <!-- OPEN GRAPH -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Meet The Sickos">
+  <meta property="og:title" content="Premiere Night Photos — Meet The Sickos">
+  <meta property="og:description" content="Were you at the sold-out world premiere? Find your photo and download it free.">
+  <meta property="og:image" content="https://MeetTheSickos.com/images/mts-logo.png">
+  <meta property="og:url" content="https://MeetTheSickos.com/photos.html">
+
+  <!-- TWITTER -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Premiere Night Photos — Meet The Sickos">
+  <meta name="twitter:description" content="Were you at the sold-out world premiere? Find your photo and download it free.">
+  <meta name="twitter:image" content="https://MeetTheSickos.com/images/mts-logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;1,400;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/photos.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <a href="index.html" class="nav-logo">Meet The Sickos</a>
+    <div class="nav-links">
+      <a href="watch.html">Watch</a>
+      <a href="photos.html" class="nav-active">Photos</a>
+      <a href="merch.html">Merch</a>
+      <a href="game.html">Play</a>
+      <a href="index.html#screenings">Screenings</a>
+    </div>
+    <button class="nav-burger" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <a href="watch.html">Watch</a>
+    <a href="photos.html">Photos</a>
+    <a href="merch.html">Merch</a>
+    <a href="game.html">Play</a>
+    <a href="index.html#screenings">Screenings</a>
+  </div>
+
+  <header class="photos-header">
+    <div>
+      <p class="photos-eyebrow">Cinemark West Philadelphia &nbsp;·&nbsp; June 2026</p>
+      <h1 class="photos-title">Premiere Night</h1>
+    </div>
+    <p class="photos-sub">Were you there? Find yourself and download your high-res photo — free, clean, no watermark.</p>
+  </header>
+
+  <!-- CLAIM FORM — email gate for download -->
+  <section class="claim-section">
+    <div class="claim-inner">
+      <p class="claim-label">Find Your Photo</p>
+      <p class="claim-body">Enter your email to locate and download your premiere night photo.</p>
+      <div class="claim-form">
+        <input
+          type="email"
+          id="claimEmail"
+          class="claim-input"
+          placeholder="your@email.com"
+          autocomplete="email"
+        >
+        <button class="btn-main" id="claimBtn" onclick="handleClaim()">Find My Photo</button>
+      </div>
+      <p class="claim-note" id="claimNote"></p>
+    </div>
+  </section>
+
+  <!-- GALLERY GRID -->
+  <!-- 
+    TO ADD PHOTOS:
+    1. Place image files in /images/premiere/ folder
+    2. Copy a .gallery-item block and update src and alt
+    3. The no-rightclick and canvas download are handled by photos.js
+  -->
+  <section class="gallery-section">
+    <div class="gallery-header">
+      <p class="gallery-label">All Photos &nbsp;·&nbsp; Sold Out World Premiere</p>
+      <p class="gallery-count" id="photoCount">0 photos</p>
+    </div>
+    <div class="gallery-grid" id="galleryGrid">
+
+      <!--
+        PHOTO TEMPLATE — duplicate for each photo:
+
+        <div class="gallery-item" data-filename="premiere-001.jpg">
+          <div class="gallery-img-wrap">
+            <img
+              src="images/premiere/premiere-001.jpg"
+              alt="Premiere night photo"
+              draggable="false"
+              loading="lazy"
+            >
+            <div class="gallery-overlay">
+              <button class="gallery-dl-btn" onclick="downloadPhoto(this)" data-src="images/premiere/premiere-001.jpg">
+                Download &darr;
+              </button>
+            </div>
+          </div>
+        </div>
+      -->
+
+      <!-- Placeholder state — remove once real photos are added -->
+      <div class="gallery-empty" id="galleryEmpty">
+        <p class="gallery-empty-head">Photos coming soon</p>
+        <p class="gallery-empty-sub">Premiere night photos will appear here shortly.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <footer class="footer">
+    <span class="footer-copy">&copy; 2026 XLNZ Productions LLC &nbsp;&middot;&nbsp; All Rights Reserved</span>
+    <div class="footer-links">
+      <a href="index.html">&larr; Back to Home</a>
+      <a href="watch.html">Watch The Film</a>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script src="js/photos.js"></script>
+</body>
+</html>
